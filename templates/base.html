@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta name="viewport" content="width=device-width" />
+        {% block head %}
+
+            <link rel="stylesheet" href="/lib/css/reset.css" />
+            <link rel="stylesheet" href="/lib/css/neoretrodraw.css" />
+            <link rel="stylesheet" href="/lib/css/alegreya.css" />
+            <link rel="stylesheet" href="/lib/css/stylesheet.css" />
+
+			<title>{% block title %}{% endblock %}</title>
+
+			<script type="text/javascript">
+
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-32003313-1']);
+				_gaq.push(['_trackPageview']);
+
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+
+			</script>
+
+        {% endblock %}
+    </head>
+	<body>
+		<a href="/" class="h1">{% block header %}{% endblock %}</a>
+
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">
+            {% block footer %}
+
+			<a href="mailto:adrian@liminology.ch">contact me at</a>
+
+            {% endblock %}
+        </div>
+    </body>
+</html>

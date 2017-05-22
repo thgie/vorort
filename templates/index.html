@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>vorort</title>
+
+		<script type="text/javascript" src="../lib/Javascript/zepto.min.js"></script>
+		<script type="text/javascript" src="../lib/Javascript/jquery.qrcode.min.js"></script>
+
+		<script type="text/javascript">
+			$('#qrcode').qrcode("this plugin is great");
+		</script>
+	</head>
+
+	<body>
+
+		<h1>vorort</h1>
+		<p>location aware communication</p>
+		<form action="/com" method="post">
+			<p></p>
+			<label for="">description</label><br/>
+			<textarea name="description" rows="10" cols="30"></textarea></br>
+			<label for="">keyword</label><br/>
+			<input name="keyword" type="text" />
+			<input type="submit" />
+			
+		</form>
+
+		<div id="qrcode"></div>
+
+	</body>
+
+</html>

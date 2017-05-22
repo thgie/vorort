@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="/lib/css/mobile.css" />
+{% endblock %}
+
+{% block title %}vorort - {{ ort.keyword }}{% endblock %}
+
+{% block content %}
+
+		<h1>say something</h1>
+		<form action="/post/{{ ort.uid }}" method="post">
+			<textarea name="message" rows="2" cols="30"></textarea><br/>
+			<input class="submit" type="submit" value="say it"/>
+		</form>
+
+		</br>
+
+		<h1>{{ ort.keyword }}</h1>
+		{% for post in posts|reverse %}
+			<p>{{ post.message }}</p>
+		{% endfor %}
+
+		</br>
+
+		<a class="h1" href="http://vorort.pagodabox.com">vorort</a>
+
+{% endblock %}

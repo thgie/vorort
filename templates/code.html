@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}vorort - {{ ort.keyword }}{% endblock %}
+{% block header %}vorort - {{ ort.keyword }}{% endblock %}
+
+{% block content %}
+
+	<img src="tmp/codes/{{ ort.uid }}.png" alt="QR Code" />
+
+	<p>Hurry up! Take this little code, print and stick it somewhere.</p>
+
+{% endblock %}

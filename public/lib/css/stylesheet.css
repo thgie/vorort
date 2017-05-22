@@ -1,0 +1,27 @@
+/* --------------------------------------------------------------
+
+   stylesheet.css
+
+-------------------------------------------------------------- */
+
+/**
+ * typography
+ */
+
+body { line-height: 150%; -webkit-text-size-adjust: 100%; }
+
+h1, h2, h3, h4, h5, h6, input { font-family: 'NeoRetroDrawRegular'; }
+p, span, a, label { font-family: 'AlegreyaRegular'; color: #181818; text-decoration: none; }
+
+a.h1 { font-family: 'NeoRetroDrawRegular'; font-size: 36px; }
+p.intro { max-width: 500px; }
+span.h4 { font-family: 'NeoRetroDrawRegular'; }
+span.italy { font-family: 'AlegreyaItalic'; }
+
+/**
+ * layout
+ */
+
+html, body { padding: 20px; }
+form.animist { margin-top: 20px; }
+div#footer { margin-top: 40px; }

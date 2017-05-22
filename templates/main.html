@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}vorort{% endblock %}
+{% block header %}vorort{% endblock %}
+
+{% block content %}
+
+		<br/>
+		<p class="intro">This project, nicknamed <span class="h4">vorort</span>, is a simple experiment in making the urban playground writeable. Writeable like in web2.0, just in real life. It's an attempt to digitaly reclaim the streets.<p>
+		<br/>
+		<p class="intro">And this is how it works. In the form below enter a keyword and press submit. In return you'll get a qr code which you print and stick somewhere. Other smartphone users can leave a message on the code when they scan it and follow the link. Every code is unique. So be sure it survives for a while. <span class="italy">All messages on a code get lost when the code dies.</span><p>
+
+		<form class="animist" action="/ort" method="post">
+			<label>keyword</label>
+			<input name="keyword" type="text" />
+			<input type="submit">
+		</form>
+
+{% endblock %}
+
